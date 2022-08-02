@@ -1,0 +1,68 @@
+{"intents": [
+  {"tag": "saludo",
+   "patterns": ["Hola", "como estas?", "que tal?","Hey","hola", "Hello", "buen día", "buenas tardes", "buenas noches"],
+   "responses": ["Hola, que tal?", "Hola, ¿En que puedo ayudarte?", "Hola, ¿Cómo puedo ayudarte?"],
+   "context": [""]
+  },
+  {"tag": "despedida",
+   "patterns": ["Bye", "nos vemos despúes", "adios", "gusto en hablar contigo, bye", "hasta luego","hasta pronto","Nos vemos"],
+   "responses": ["Nos vemos", "Que tengas un lindo día", "Bye! Vuelve pronto", "Adios"],
+   "context": [""]
+  },
+  {"tag": "agradecimiento",
+   "patterns": ["gracias", "eso es util", "genial gracias", "gracias por ayudarme"],
+   "responses": ["Contento de ayudar!", "Por nada!", "Un placer"],
+   "context": [""]
+  },
+  {"tag": "noanswer",
+   "patterns": [],
+   "responses": ["Lo siento, no puedo entenderte", "Por favor, dame más información"],
+   "context": [""]
+  },
+  {"tag": "opciones",
+   "patterns": ["como puedes ayudarme?", "que sabes hacer?", "como puedes apoyarme?","como me puedes proveer?", "que informacion ofreces?", "que soporte ofreces?"],
+   "responses": ["Estoy aquí para ayudarte a comprender los ingresos del Estado, composición, estructura y legislación"],
+   "context": [""]
+  },
+  {"tag": "nombre",
+   "patterns": ["como te llamas?", "como te dicen?", "cual es tu nombre", "tienes algun nombre?"],
+   "responses": ["Me llamo Ingresito, y soy un chatbot para ayudarte a entender los ingresos del Estado"],
+   "context": [""]
+  },
+  {"tag": "ley",
+   "patterns": ["que es la ley de ingresos?", "que es la ley de ingresos del estado?", "que es la ley de ingresos para cada ejercicio?"],
+   "responses": ["Es la ley que contiene los ingresos que el Estado espera recibir para un año determinado, para conocerla te invitamos a visitar la siguiente liga https://finanzas.guanajuato.gob.mx/doc/mrf/Ley%20de%20Ingresos%202022.pdf"],
+   "context": [""]
+  },
+  {"tag": "esley",
+   "patterns": ["como es la ley", "que estructura tiene la ley", "cual es la forma de la ley?" ],
+   "responses": ["La estructura de la ley de ingresos se basa "],
+   "context": [""]
+  },
+  {"tag": "search_blood_pressure_by_patient_id",
+   "patterns": [],
+   "responses": ["Loading Blood pressure result for Patient"],
+   "context": [""]
+  },
+  {"tag": "pharmacy_search",
+   "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+   "responses": ["Please provide pharmacy name"],
+   "context": ["search_pharmacy_by_name"]
+  },
+  {"tag": "hospital_search",
+   "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+   "responses": ["Please provide hospital name or location"],
+   "context": ["search_hospital_by_params"]
+  },
+  {"tag": "search_hospital_by_params",
+   "patterns": [],
+   "responses": ["Please provide hospital type"],
+   "context": ["search_hospital_by_type"]
+  },
+  {"tag": "search_hospital_by_type",
+   "patterns": [],
+   "responses": ["Loading hospital details"],
+   "context": [""]
+  }
+]
+}
